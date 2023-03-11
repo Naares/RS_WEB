@@ -191,7 +191,19 @@ progress{
 }
 
 .progress-blue{
-    accent-color: rgb(0,166,255);
+    accent-color: rgb(49,168,255);
+}
+
+.progress-illustrator{
+    accent-color: rgb(255,154,0);
+}
+
+.progress-indesign{
+    accent-color: rgb(130, 25, 52);
+}
+
+.progress-premiere{
+    accent-color: rgb(153,153,255);
 }
 
 .progress-green{
