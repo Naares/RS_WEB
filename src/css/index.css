@@ -109,7 +109,7 @@ a{
 }
 
 .hero-text h2{
-    font-size: 3rem;
+    font-size: 5rem;
     position: absolute;
     left:50%;
     top: 40%;
@@ -129,6 +129,7 @@ a{
     list-style: none;
     float: left;
 }
+
 
 .social-container{
     position:absolute;
@@ -153,7 +154,7 @@ a{
 }
 
 p{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .in-line{
@@ -175,12 +176,36 @@ p{
     margin: auto;
 }
 
+.section h2{
+    margin-bottom: 3rem;
+}
+
 progress{
     accent-color: #939393;
     height: 3vh;
     text-align: right;
     display: flex;
-    margin: auto;
+    width:40%;
+}
+
+.progress-blue{
+    accent-color: rgb(0,166,255);
+}
+
+.progress-green{
+    accent-color: rgb(4, 207, 4);
+}
+
+.progress-red{
+    accent-color: rgb(227, 54, 54);
+}
+
+.progress-gray{
+    accent-color: rgb(154, 154, 154);
+}
+
+.progress-yellow{
+    accent-color: rgb(222, 222, 25);
 }
 
 progress:after{
@@ -202,9 +227,21 @@ progress:after{
     height: 15vh;
 }
 
+.gallery{
+    line-height: 0;
+    -webkit-column-count:5;
+    -webkit-column-gap:5px;
+    -moz-column-count: 5;
+    -moz-column-gap: 5px;
+    column-count: 5;
+    column-gap: 5px;
+}
 
-
-
+.gallery img{
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+}
 
 ::-webkit-scrollbar-track
 {
@@ -228,4 +265,41 @@ progress:after{
 									   color-stop(0.44, rgb(53, 53, 53)),
 									   color-stop(0.72, rgb(107, 107, 107)),
 									   color-stop(0.86, rgb(168, 168, 168)));
+}
+
+@media (max-width:1200px){
+    .gallery{
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+
+    .content{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media(max-width:1000px){
+    .gallery{
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width:800px){
+    .gallery{
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count: 2;
+    }
+}
+
+@media(max-width:400px){
+    .gallery{
+        -moz-column-count: 1;
+        -webkit-column-count:1;
+        column-count:1
+    }
 }
