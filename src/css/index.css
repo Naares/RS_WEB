@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#preloader{
+    background: #ffffff url(../../resources/img/preload/loading.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    color: #ffff;
+    background-color: #0000;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn{
+    border: 1.5px solid #fff;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    color: #000;
+    background: #fff;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}
+
+.parallax_group{
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+}
+
+.parallax_layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sky{
+    background: url(../../resources/img/paralax_layer_5.png) no-repeat center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(3);
+    z-index: 1;
+}
+
+.mountain1{
+    background: url(../../resources/img/paralax_layer_4.png) no-repeat center;
+    background-size: cover;
+    transform: translateZ(-525px) scale(2.8);
+    z-index: 2;
+}
+
+.mountain2{
+    background: url(../../resources/img/paralax_layer_3.png) no-repeat center;
+    background-size: cover;
+    transform: translateZ(-225px) scale(1.8);
+    z-index: 3;
+}
+
+.trees1{
+    background: url(../../resources/img/paralax_layer_2.png) no-repeat bottom;
+    background-size: cover;
+    transform: translateZ(-125px) scale(1.6);
+    z-index: 4;
+}
+
+.trees2{
+    background: url(../../resources/img/paralax_layer_1.png) no-repeat bottom;
+    background-size: cover;
+    transform: translateZ(0px) scale(1) translateY(-1px);
+    z-index: 5;
+}
+
+.hero-text{
+    background: linear-gradient(
+        rgba(105,211,252,0.25) 0%,
+        rgba(74, 70, 70, 0.25) 86%,
+        #282423 100%
+    );
+    background-size: cover;
+    transform: translateZ(0) scale(1);
+    z-index: 6;
+}
+
+.hero-text h2{
+    font-size: 3rem;
+    position: absolute;
+    left:50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-text ul{
+    font-size: 1rem;
+    position: absolute;
+    left:50%;
+    top:48%;
+    transform: translate(-50%,-50%);
+}
+
+.hero-text ul li{
+    margin-left: 2.5rem;
+    list-style: none;
+    float: left;
+}
+
+.social-container{
+    position:absolute;
+    right:2.5rem;
+    bottom:7rem;
+}
+
+.social-container i{
+    font-size:1.75rem;
+    margin-right: .25rem;
+}
+
+
+.content{
+    background-color: #282423;
+    transform: translateY();
+    height: 501vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 0.5rem;
+}
+
+.in-line{
+    display: flex;
+}
+
+.in-line img{
+    padding: 1rem;
+}
+
+.footer{
+    background-color: #282423;
+    height: 5vh;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+progress{
+    accent-color: #939393;
+    height: 3vh;
+    text-align: right;
+    display: flex;
+    margin: auto;
+}
+
+progress:after{
+    content: attr(value)'%';
+    align-content: end;
+}
+
+.skill-header{
+    float: left;
+}
+
+.round-img{
+    border-radius: 50%;
+    height:15rem;
+    width: 15rem;
+}
+
+.spacer{
+    height: 15vh;
+}
+
+
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(53, 53, 53)),
+									   color-stop(0.72, rgb(107, 107, 107)),
+									   color-stop(0.86, rgb(168, 168, 168)));
+}
